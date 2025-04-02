@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login MDM</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        .login-container {
+    display: flex;
+    width: 900px; /* Aumentado de 800px */
+    height: 450px; /* Aumentado de 400px */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.blue-section {
+    width: 50%;
+    background-color: #1976D2;
+    color: white;
+    padding: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrado horizontal */
+    justify-content: center; /* Centrado vertical */
+    text-align: center;
+}
+
+.blue-section h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.blue-section p {
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: 0.9;
+    width: 80%;
+    margin: 0 auto 20px; /* Centrado con margen inferior */
+}
+
+.know-more {
+    display: inline-block;
+    padding: 8px 16px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 20px; /* Espaciado consistente */
+}
+
+        .circle {
+            position: absolute;
+            bottom: 30px;
+            right: -30px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: white;
+            opacity: 0.2;
+        }
+
+        .white-section {
+            width: 50%;
+            background-color: white;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .signin-title {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+            font-size: 18px;
+            font-weight: normal;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px 0;
+            border: none;
+            border-bottom: 1px solid #ddd;
+            outline: none;
+            font-size: 14px;
+        }
+
+        .login-button {
+            padding: 12px;
+            background-color: #1976D2;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 14px;
+            cursor: pointer;
+            margin-top: 10px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="blue-section">
+            <h1>Bienvenido a MDM</h1>
+            <p>Lorem Ipsum es simplemente texto de relleno de la industria de la impresión y la composición tipográfica. Lorem Ipsum ha sido el texto estándar de la industria.</p>
+            <a href="#" class="know-more">Saber Más</a>
+            
+        </div>
+        <div class="white-section">
+            <h2 class="signin-title">Iniciar Sesión</h2>
+            <form>
+                <div class="input-group">
+                    <input type="text" placeholder="Ingrese su Email">
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Ingrese su Contraseña...">
+                </div>
+                <button type="submit" class="login-button">INGRESAR</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
