@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <!-- Sección de Contraseña y Datos -->
+  <form>
+    <h3>Password &amp; Details</h3>
+    
+    <label>Country:</label>
+    <select name="country">
+      <option value="">Choose...</option>
+      <option>México</option>
+      <option>España</option>
+      <option>Argentina</option>
+    </select>
+
+    <br><br>
+
+    <label>Language:</label>
+    <select name="language">
+      <option value="">Choose...</option>
+      <option>Español</option>
+      <option>English</option>
+    </select>
+
+    <br><br>
+  </form>
+
+  <!-- Sección de Planes -->
+  <form>
+    <h3>Change Plan</h3>
+    
+    <input type="radio" name="plan" id="plan1" required>
+    <label for="plan1">1GB uploads ($3.47/month)</label><br>
+
+    <input type="radio" name="plan" id="plan2">
+    <label for="plan2">5GB uploads ($10/month)</label><br>
+
+    <input type="radio" name="plan" id="plan3">
+    <label for="plan3">15GB uploads ($30/month)</label>
+
+    <br><br>
+  </form>
+
+  <!-- Sección de Notificaciones -->
+  <form>
+    <h3>Account Notifications</h3>
+    
+    <input type="checkbox" id="notif1">
+    <label for="notif1">Weekly activity summary</label><br>
+
+    <input type="checkbox" id="notif2">
+    <label for="notif2">Meeting reminders</label><br>
+
+    <input type="checkbox" id="notif3">
+    <label for="notif3">Company news updates</label><br>
+
+    <input type="checkbox" id="notif4">
+    <label for="notif4">Weekly job alerts</label>
+
+    <br><br>
+
+    <button type="submit">Save Settings</button>
+  </form>
+</body>
+</html>
