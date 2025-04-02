@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo etiquetas HTML</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Etiquetas de estructura semántica -->
+    <header>
+        <h1>Encabezado Principal (h1)</h1>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Encabezados -->
+        <section>
+            <h2>Subtítulo (h2)</h2>
+            <h3>Sub-subtítulo (h3)</h3>
+            <h4>Encabezado h4</h4>
+            <h5>Encabezado h5</h5>
+            <h6>Encabezado h6</h6>
+        </section>
+
+        <!-- Texto y multimedia -->
+<!-- ... (el resto del HTML anterior permanece igual) -->
+
+<!-- Texto y multimedia -->
+<article>
+    <p>Este es un párrafo de ejemplo <span>con texto en span</span>.</p>
+    <br>
+    <hr>
+
+    <!-- Imagen desde URL externa -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Instituto_Tecnologico_de_Oaxaca_-_original.svg/2131px-Instituto_Tecnologico_de_Oaxaca_-_original.svg.png" alt="ITO LOGO" width="100">
+    
+    <!-- Video de YouTube  -->
+   <iframe width="300" height="215" src="https://www.youtube.com/embed/rCL8-CiGSmc?si=sbbX50mlo5c1iDy0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    <!-- Audio desde URL externa -->
+    <audio controls>
+        <source src="https://soundcloud.com/juniorh-music/suena?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" type="audio/mpeg">
+        Tu navegador no soporta audio
+    </audio>
+</article>   
+
+        <!-- Tablas -->
+        <section>
+            <table border="1">
+                <tr>
+                    <th>Encabezado tabla</th>
+                    <th>Otro encabezado</th>
+                </tr>
+                <tr>
+                    <td>Celda 1</td>
+                    <td>Celda 2</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Formularios -->
+        <section>
+            <form action="/submit">
+                <input type="text" placeholder="Campo de texto">
+                <input type="password" placeholder="Contraseña">
+                <textarea placeholder="Área de texto"></textarea>
+                
+                <select>
+                    <option>Opción 1</option>
+                    <option>Opción 2</option>
+                </select>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Listas -->
+        <aside>
+            <ul>
+                <li>Elemento lista no ordenada 1</li>
+                <li>Elemento 2</li>
+            </ul>
+            
+            <ol>
+                <li>Elemento ordenado 1</li>
+                <li>Elemento ordenado 2</li>
+            </ol>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Pie de página &copy; 2025</p>
+    </footer>
+</body>
+</html>
