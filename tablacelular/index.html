@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tarjeta de producto iPhone 14 Pro</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #2c5db9;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .product-card {
+      background-color: #FFFFFF;
+      width: 350px; 
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+    }
+    .product-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .product-card h2 {
+      margin: 10px 0;
+      font-size: 22px;
+    }
+    .product-card p {
+      margin: 0 0 20px;
+      color: #555;
+    }
+    .product-card select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    
+    .row-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Centra verticalmente a los hijos */
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.price-container {
+  display: flex;         /* Para que align-items funcione internamente */
+  align-items: center;   /* Centra el texto en el eje vertical dentro de su contenedor */
+  height: 44px;          /* Misma altura que el botón */
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  flex: 0 0 auto;
+  text-align: left;
+}
+
+.price {
+  margin: 0;
+  line-height: 44px;  /* Ajuste para que el texto ocupe la misma altura */
+}
+
+.button-container {
+  flex: 1;
+}
+
+.product-card button {
+  width: 100%;
+  height: 44px;  /* Botón de 44px de alto */
+  padding: 0 12px; /* Si usas 44px de alto, evita padding vertical grande */
+  background: linear-gradient(to right, #16478f, #2E8B57);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+.product-card button:hover {
+  background: linear-gradient(to right, #2E8B57, #4CAF50);
+}
+
+  </style>
+</head>
+<body>
+
+<div class="product-card">
+  <img src="https://th.bing.com/th/id/R.dd4a27219a9a6d6d046b8110c88a1d18?rik=bOkMuuAWY675iA&pid=ImgRaw&r=0" alt="iPhone 14 Pro">
+  
+  <h2>iPhone 14 Pro</h2>
+  <p>Breve descripción del iPhone 14 Pro. Pantalla Super Retina XDR, chip A16 Bionic y un diseño espectacular.</p>
+
+  <label for="color">Color:</label>
+  <select id="color" name="color">
+    <option value="negro-espacial">Negro Espacial</option>
+    <option value="plata">Plata</option>
+    <option value="morado">Morado</option>
+    <option value="dorado">Dorado</option>
+  </select>
+
+  <label for="version">Versión:</label>
+  <select id="version" name="version">
+    <option value="solo-dispositivo">Solo el dispositivo</option>
+    <option value="dispositivo-applecare">Dispositivo + AppleCare</option>
+  </select>
+
+ 
+  <div class="row-container">
+    <div class="price-container">
+      <p class="price">$999</p>
+    </div>
+    <div class="button-container">
+      <button>Agregar al carrito</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
